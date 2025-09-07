@@ -33,7 +33,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     button.disabled = true;
     
     // Send email
-    emailjs.sendForm('service_1xxn7d6', 'template_n8qc7xf', this)
+    emailjs.sendForm('service_1xxn7d6', 'template_f0xmgo9', this)
         .then(function() {
             alert('Message sent successfully!');
             document.getElementById('contact-form').reset();
@@ -74,3 +74,11 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('textarea[name="message"]').value = defaultMessage;
     document.querySelector('input[name="subject"]').value = "Lamaran Magang - Mahasiswa Informatika Universitas Krisnadwipayana";
 });
+
+// Subject otomatis dibuat dari nama user
+const formData = {
+    from_name: this.from_name.value,
+    reply_to: this.reply_to.value, 
+    message: this.message.value,
+    subject: 'Portfolio Contact - ' + this.from_name.value  // ← Auto-generated
+};
