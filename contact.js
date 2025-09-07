@@ -1,4 +1,6 @@
+import emailjs from '@emailjs/browser';
 // Initialize EmailJS
+
 (function(){
     emailjs.init("MYnAc_1cwCn16l3Qa"); // Public key sudah benar
 })();
@@ -30,25 +32,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 });
 
 // Pre-filled data untuk form
-const defaultMessage = `Kepada Yth. Bapak/Ibu HRD,
-
-Saya dengan hormat memperkenalkan diri:
-
-Nama: Bintang Nabil Mutahari
-Universitas: Universitas Krisnadwipayana  
-Jurusan: Informatika (Semester 7)
-Domisili: Jakarta Timur
-
-Melalui portfolio ini, saya tertarik untuk mengajukan permohonan magang di perusahaan yang Bapak/Ibu pimpin. Saya memiliki minat yang besar di bidang teknologi informasi dan ingin mengembangkan kemampuan praktis saya.
-
-Sebagai mahasiswa semester 7, saya siap memberikan kontribusi positif dan dapat menyesuaikan jadwal magang dengan kebutuhan perusahaan.
-
-Saya sangat berharap dapat berkesempatan untuk berdiskusi lebih lanjut mengenai program magang ini.
-
-Terima kasih atas perhatian Bapak/Ibu.
-
-Hormat saya,
-Bintang Nabil Mutahari`;
+const defaultMessage = ``;
 
 // Set default value saat form load
 document.addEventListener('DOMContentLoaded', function() {
