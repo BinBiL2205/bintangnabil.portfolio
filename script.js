@@ -35,7 +35,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     
     // PERBAIKAN: Template_ID harus diisi!
     // Ganti 'YOUR_TEMPLATE_ID' dengan template ID real dari dashboard
-    emailjs.sendForm('service_1xxn7d6', 'template_f0xmgo9', this)
+    emailjs.sendForm('service_1xxn7d6', 'template_f0xmgo9')
         .then(function() {
             alert('Message sent successfully!');
             document.getElementById('contact-form').reset();
