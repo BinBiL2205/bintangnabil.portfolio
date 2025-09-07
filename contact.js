@@ -32,7 +32,7 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
 });
 
 // Pre-filled data untuk form
-const defaultMessage = ``;
+const defaultMessage = "";
 
 // Set default value saat form load
 document.addEventListener('DOMContentLoaded', function() {
